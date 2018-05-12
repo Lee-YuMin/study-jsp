@@ -60,7 +60,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector URIEncoding="EUC-KR" connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="JSP0314" path="/JSP0314" reloadable="true" source="org.eclipse.jst.jee.server:JSP0314"/><Context docBase="JSP0321" path="/JSP0321" reloadable="true" source="org.eclipse.jst.jee.server:JSP0321"/><Context docBase="JSP0321-02" path="/JSP0321-02" reloadable="true" source="org.eclipse.jst.jee.server:JSP0321-02"/><Context docBase="JSP03-28" path="/JSP03-28" reloadable="true" source="org.eclipse.jst.jee.server:JSP03-28"/></Host>
+      <Context docBase="JSP0321-02" path="/JSP0321-02" reloadable="true" source="org.eclipse.jst.jee.server:JSP0321-02"/><Context docBase="04-pageDirective" path="/04-pageDirective" reloadable="true" source="org.eclipse.jst.jee.server:04-pageDirective"/><Context docBase="midtest" path="/midtest" reloadable="true" source="org.eclipse.jst.jee.server:midtest"/></Host>
     </Engine>
   </Service>
 </Server>
